@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bars Around UW</string>
+    <string name="app_title">Bars Around UW</string>
+    <string name="my_favorite_bar">My Favorite Bars</string>
+    <string name="my_favorite">Favorites</string>
+    <string name="bar_1">UW Seattle Bars</string>
+    <string name="bar_2">UW Tacoma Bars</string>
+    <string name="bar_3">UW Bothell Bars</string>
+    <string name="facebook_app_id">854690467914256</string>
+    <string name="login_as_guest">Login in as Guest</string>
+
+</resources>

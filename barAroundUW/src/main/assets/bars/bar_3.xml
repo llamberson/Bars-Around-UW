@@ -1,0 +1,24 @@
+{
+	"bars": [	
+		     
+		     {	
+		        "name":         "The Three Lions Pub",
+		        "address": 	    "10111 Main St Bothell, WA 98011",
+		        "phone": 	    "(425) 398-0111",
+		        "about": 	    "British, Pubs",
+				"longitude":    -122.204926,
+				"latitude": 	47.760094,
+				"image": 		"three_lions.png"
+		     },
+		     		     			     		     		     		     		         
+		     {	
+		        "name":         "Horseshoe Saloon",
+		        "address": 	    "12461 NE Woodinville Dr Woodinville, WA 98072",
+		        "phone": 	    "(425) 488-2888",
+		        "about": 	    "Bars, American",
+				"longitude":    -122.172287,
+				"latitude": 	47.753845,
+				"image": 		"horse_shoe.png"
+		     }
+	]
+}

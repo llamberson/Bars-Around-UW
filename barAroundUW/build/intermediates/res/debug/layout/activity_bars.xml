@@ -1,0 +1,17 @@
+   <LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"       
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true">
+    <com.example.android.common.view.SlidingTabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+   </LinearLayout>
+<!-- From: file:/C:/Users/Luke/Desktop/App%20project%20V2/barAroundUW/src/main/res/layout/activity_bars.xml -->

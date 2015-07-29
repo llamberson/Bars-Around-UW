@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:shape="rectangle">
+        
+<solid android:color="@color/black"/>
+
+<corners android:bottomLeftRadius="4dip"
+         android:bottomRightRadius="4dip"
+         android:topLeftRadius="4dip"
+         android:topRightRadius="4dip"/>
+
+</shape>
+<!-- From: file:/C:/Users/Luke/Desktop/App%20project%20V2/barAroundUW/src/main/res/drawable/button_black.xml -->

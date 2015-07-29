@@ -1,0 +1,104 @@
+{
+	"bars": [	
+		     
+		     {	
+		        "name":         "Top of Tacoma Bar",
+		        "address": 	    "3529 McKinley Ave Tacoma, WA 98438",
+		        "phone": 	    "(253) 272-1502",
+		        "about": 	    "Bars, American",
+				"longitude":    -122.420279,
+				"latitude": 	47.229295,
+				"image": 		"top_of_tacoma.png"
+		     },
+		     
+		     {	
+		        "name":         "Harmon Brewing Co & Restaurant",
+		        "address": 	    "1938 Pacific Ave S Tacoma, WA 98402",
+		        "phone": 	    "(253) 383-2739",
+		        "about": 	    "Pub, Breweries",
+				"longitude":    -122.436709,
+				"latitude": 	47.243656,
+				"image": 		"hamon_brewing.png"
+		     },
+		     
+		     {	
+		        "name":         "The Swiss Restaurant & Pub",
+		        "address": 	    "1904 Jefferson Ave Tacoma, WA 98402",
+		        "phone": 	    "(253) 572-2821",
+		        "about": 	    "Pubs, Music Venues, Venues & Event Spaces",
+				"longitude":    -122.439236,
+				"latitude": 	47.244716,
+				"image": 		"the_swiss.png"
+		     },	
+		     
+		     {	
+		        "name":         "Acme Tavern",
+		        "address": 	    "1310 Tacoma Ave S Tacoma, WA 98402",
+		        "phone": 	    "(253) 503-6712",
+		        "about": 	    "Bars",
+				"longitude":    -122.444140,
+				"latitude": 	47.250217,
+				"image": 		"acme_tavern.png"
+		     },
+		     
+		     {	
+		        "name":         "New Frontier Lounges",
+		        "address": 	    "301 E 25th St Tacoma, WA 98421",
+		        "phone": 	    "(253) 572-4020",
+		        "about": 	    "Lounges, Music Venues",
+				"longitude":    -122.430581,
+				"latitude": 	47.239816,
+				"image": 		"new_frontier.png"
+		     },
+		     
+		     {	
+		        "name":         "The Social Bar & Grill",
+		        "address": 	    "1715 Dock St Tacoma, WA 98402",
+		        "phone": 	    "(253) 301-3835",
+		        "about": 	    "American",
+				"longitude":    -122.434841,
+				"latitude": 	47.247483,
+				"image": 		"social_bar.png"
+		     },
+		     
+		     {	
+		        "name":         "Paesan Kitchen & Bar",
+		        "address": 	    "1705 Dock St Tacoma, WA 98402",
+		        "phone": 	    "(253) 301-2396",
+		        "about": 	    "Italian, Bars",
+				"longitude":    -122.433864,
+				"latitude": 	47.247437,
+				"image": 		"paesan.png"
+		     },		     		 
+		     
+		     {	
+		        "name":         "Tacoma Cabana",
+		        "address": 	    "728 Pacific Ave Tacoma, WA 98402",
+		        "phone": 	    "(253) 222-4184",
+		        "about": 	    "Bars",
+				"longitude":    -122.439684,
+				"latitude": 	47.256219,
+				"image": 		"tacoma_cabana.png"
+		     },
+		     
+		     {	
+		        "name":         "Dorky’s Bar Arcade",
+		        "address": 	    "754 Pacific Ave Tacoma, WA 98402",
+		        "phone": 	    "(253) 627-4156",
+		        "about": 	    "Bar, Arcades, Pizza",
+				"longitude":    -122.439393,
+				"latitude": 	47.255607,
+				"image": 		"dorky_bar.png"
+		     },
+		     
+		     {	
+		        "name":         "Steel Creek Tacoma ",
+		        "address": 	    "1114 Broadway Tacoma, WA 98402",
+		        "phone": 	    "(253) 627-1229",
+		        "about": 	    "Bar, American (Traditional)",
+				"longitude":    -122.440358,
+				"latitude": 	47.252554,
+				"image": 		"steel_creek.png"
+		     }
+	]
+}

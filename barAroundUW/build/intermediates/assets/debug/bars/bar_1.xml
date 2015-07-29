@@ -1,0 +1,104 @@
+{
+	"bars": [
+	
+		     {	
+		        "name":         "LUCID",
+		        "address": 	    "5241 University Way NE Seattle, WA 98105",
+		        "phone": 	    "(206) 402-3042",
+		        "about": 	    "Jazz & Blues, Lounges",
+				"longitude":    -122.313329,
+				"latitude": 	47.667618,
+				"image": 		"lucid.png"
+		     },
+		     
+		     {	
+		        "name":         "The Kraken Bar & Lounge",
+		        "address": 	    "5257 University Way NE Seattle, WA 98105",
+		        "phone": 	    "(206) 522-5334",
+		        "about": 	    "Dive Bars, American (Traditional), Music Venues",
+				"longitude":    -122.313352,
+				"latitude": 	47.668076,
+				"image": 		"kraken.png"
+		     },
+		     
+		     {	
+		        "name":         "College Inn Pub",
+		        "address": 	    "4006 University Way NE Seattle, WA 98105",
+		        "phone": 	    "(206) 634-2307",
+		        "about": 	    "Pubs",
+				"longitude":    -122.313287,
+				"latitude": 	47.655478,
+				"image": 		"college_inn.png"
+		     },
+		     
+		     {	
+		        "name":         "Liam’s",
+		        "address": 	    "2685 NE 46th St Seattle, WA 98105",
+		        "phone": 	    "(206) 527-6089",
+		        "about": 	    "Wine Bar, American (New)",
+				"longitude":    -122.298149,
+				"latitude": 	47.661593,
+				"image": 		"liam.png"
+		     },		     		 
+		     
+		     {	
+		        "name":         "The Monkey Pub",
+		        "address": 	    "5305 Roosevelt Way NE Seattle, WA 98105",
+		        "phone": 	    "(206) 523-6457",
+		        "about": 	    "Pubs",
+				"longitude":    -122.317627,
+				"latitude": 	47.667316,
+				"image": 		"monkey_pub.png"
+		     },
+		     
+		     {	
+		        "name":         "Big Time Brewing Company",
+		        "address": 	    "4133 University Wy NE Seattle, WA 98105",
+		        "phone": 	    "(206) 545-4509",
+		        "about": 	    "Pubs, Pizza, Breweries",
+				"longitude":    -122.313420,
+				"latitude": 	47.657850,
+				"image": 		"big_time_brewing.png"
+		     },
+		     
+		     {	
+		        "name":         "The District Lounge",
+		        "address": 	    "4507 Brooklyn Ave NE Seattle, WA 98127",
+		        "phone": 	    "(206) 634-2000",
+		        "about": 	    "Lounges",
+				"longitude":    -122.314541,
+				"latitude": 	47.661641,
+				"image": 		"the_district.png"
+		     },	
+		     
+		     {	
+		        "name":         "Earl’s On the Avenue",
+		        "address": 	    "4333 University Way NE Seattle, WA 98105",
+		        "phone": 	    "(206) 525-4493",
+		        "about": 	    "Sports Bar, American (Traditional)",
+				"longitude":    -122.313479,
+				"latitude": 	47.660806,
+				"image": 		"earls.png"
+		     },
+		     
+		     {	
+		        "name":         "RAM Restaurants & Brewery",
+		        "address": 	    "2650 NE University Village St Seattle, WA 98105",
+		        "phone": 	    "(206) 525-3565",
+		        "about": 	    "American (New), Breweries",
+				"longitude":    -122.298807,
+				"latitude": 	47.664596,
+				"image": 		"ram_restaurant.png"
+		     },
+		     
+		     {	
+		        "name":         "Shultzy’s Sausage",
+		        "address": 	    "4114 University Way NE Seattle, WA 98105",
+		        "phone": 	    "(206) 548-9461",
+		        "about": 	    "Hot Dogs, German, Pubs",
+				"longitude":    -122.313064,
+				"latitude": 	47.657316,
+				"image": 		"shultzy.png"
+		     }
+	]
+}

@@ -1,0 +1,8 @@
+C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\classes\debug
+C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-aa16b3cf885393ef74ba8407c65bcf20627dd05b.jar
+C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-c47238ca7c76036852da9c7344a339634026dcd1.jar
+C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-530d452167a60a4734a39b0c41fa9f5e670421c4.jar
+C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\pre-dexed\debug\classes-cbc3d81e335ba438dca69e8ccb4e6dd027f3c36d.jar
+C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\pre-dexed\debug\classes-5da2a56af0e10d6e0d45dc35f0fab7cb236c964b.jar
+C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\pre-dexed\debug\classes-9784ee8d077f72d6e5c72700faaa2c0e1bdacf29.jar
+C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\pre-dexed\debug\classes-c1801f4a1ad4184d4a595534c499d9be29f52a06.jar
