@@ -1,0 +1,50 @@
+   <LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"       
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentTop="true">
+
+       <ImageView
+           android:id="@+id/thumbnail"
+           android:layout_width="64dp"
+           android:layout_height="64dp"
+           android:layout_gravity="center"
+           android:layout_margin="5dp"
+           android:scaleType="fitXY"
+           android:src="@drawable/ic_launcher" />
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="vertical">
+           <TextView
+               android:id="@+id/bar_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/app_name"
+               android:padding="5dp"
+               android:textAppearance="?android:attr/textAppearanceLarge"
+               android:textStyle="bold" />
+           <TextView
+               android:id="@+id/bar_details"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/app_name"
+               android:padding="5dp"
+               android:textAppearance="?android:attr/textAppearanceMedium"/>
+       </LinearLayout>
+
+       <ImageView
+           android:id="@+id/favorite"
+           android:layout_width="48dp"
+           android:layout_height="48dp"
+           android:layout_margin="5dp"
+           android:src="@drawable/favorite_not"
+           android:layout_gravity="center"
+           android:hapticFeedbackEnabled="true"/>
+              
+   </LinearLayout>
+<!-- From: file:/C:/Users/Luke/Desktop/App%20project%20V2/barAroundUW/src/main/res/layout/bars_item.xml -->
