@@ -175,4 +175,6 @@ public class BarDB {
         this.closeDB();
     }
 
+
+    //add async activity
 }

@@ -39,7 +39,7 @@ public class MapFragment extends Fragment{
 
     private void setUpMap(Bundle savedInstanceState){
 
-        int index = getArguments().getInt("bars");
+        String index = getArguments().getString("bars");
         final ArrayList<Bar> bars = AppUtility.getBars(getActivity(), index);
 
         //Initiate Google maps

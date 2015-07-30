@@ -70,17 +70,20 @@ public class MenuActivity extends Activity {
 
 	public void openBar1(View v){
 		Intent i = new Intent(this, BarsActivity.class);
-		i.putExtra("bars", 1);
+		i.putExtra("bars", "http://cssgate.insttech.washington.edu/~lukecl/Android/bar1.php");
+		//i.putExtra("bars", 1);
 		startActivity(i);
 	}
 	public void openBar2(View v){
 		Intent i = new Intent(this, BarsActivity.class);
-		i.putExtra("bars", 2);
+		i.putExtra("bars", "http://cssgate.insttech.washington.edu/~lukecl/Android/bar2.php");
+		//i.putExtra("bars", 2);
 		startActivity(i);
 	}
 	public void openBar3(View v){
 		Intent i = new Intent(this, BarsActivity.class);
-		i.putExtra("bars", 3);
+		i.putExtra("bars", "http://cssgate.insttech.washington.edu/~lukecl/Android/bar3.php");
+		//i.putExtra("bars", 3);
 		startActivity(i);
 	}
 

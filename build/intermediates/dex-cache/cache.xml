@@ -2,53 +2,53 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services\4.2.42\classes.jar"
+        jar="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="e5f81129dfb3d02df80126512bc98278ed2bb40a">
-        <dex dex="C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\pre-dexed\debug\classes-c1801f4a1ad4184d4a595534c499d9be29f52a06.jar" />
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-0034d807b84492fede19edcc4a5bfbc1cc93509b.jar" />
     </item>
     <item
-        jar="C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jar="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\exploded-aar\App project V2\facebookSDK\unspecified\libs\bolts-android-1.1.4.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\pre-dexed\debug\classes-9784ee8d077f72d6e5c72700faaa2c0e1bdacf29.jar" />
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-604e304b077e3911ac27f2edbdc344f17dd401c1.jar" />
     </item>
     <item
         jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-aa16b3cf885393ef74ba8407c65bcf20627dd05b.jar" />
+        <dex dex="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-aa16b3cf885393ef74ba8407c65bcf20627dd05b.jar" />
     </item>
     <item
-        jar="C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\exploded-aar\App project\facebookSDK\unspecified\classes.jar"
+        jar="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services\4.2.42\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="7acc3ef0cd06b9b8dec2b0612ff302df3fc2a31f">
-        <dex dex="C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\pre-dexed\debug\classes-5da2a56af0e10d6e0d45dc35f0fab7cb236c964b.jar" />
+        sha1="e5f81129dfb3d02df80126512bc98278ed2bb40a">
+        <dex dex="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\pre-dexed\debug\classes-b612bd115002d30e1ae3942877ec890d8cf5f2b3.jar" />
     </item>
     <item
-        jar="C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\exploded-aar\App project\facebookSDK\unspecified\libs\bolts-android-1.1.4.jar"
+        jar="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\exploded-aar\App project V2\facebookSDK\unspecified\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="129874135e6081269ace2312092031558865de12">
-        <dex dex="C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-c47238ca7c76036852da9c7344a339634026dcd1.jar" />
+        sha1="42fd6563493bcfa5189775ed242fb845d49de92b">
+        <dex dex="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\pre-dexed\debug\classes-84e2b9962bbfef939d48f4b623066c9656a3abac.jar" />
     </item>
     <item
-        jar="C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jar="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\pre-dexed\debug\classes-f10bad1d05c0e577a94fab6fe0399e10a8405684.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\pre-dexed\debug\classes-cbc3d81e335ba438dca69e8ccb4e6dd027f3c36d.jar" />
-    </item>
-    <item
-        jar="C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="C:\Users\Luke\Desktop\App project\barAroundUW\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-530d452167a60a4734a39b0c41fa9f5e670421c4.jar" />
+        <dex dex="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\pre-dexed\debug\classes-59b4d2f976f2546673e8afb8b4a40761af7a501d.jar" />
     </item>
 
 </items>

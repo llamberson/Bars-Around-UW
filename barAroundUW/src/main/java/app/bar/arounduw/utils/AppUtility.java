@@ -1,10 +1,18 @@
 package app.bar.arounduw.utils;
 
 import java.io.BufferedInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
+import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
+import org.apache.http.StatusLine;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -14,6 +22,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
+
 import app.bar.arounduw.model.Bar;
 
 public class AppUtility {
@@ -29,16 +39,23 @@ public class AppUtility {
 	public AppUtility (){}
 
 	//Get array list of bars
-	public static ArrayList<Bar> getBars (Context context, int index){
+	public static ArrayList<Bar> getBars (Context context, String index){
 
-		ArrayList<Bar> bars = new ArrayList<Bar>();
+		ArrayList<Bar> bars = new ArrayList<>();
 
-		String bars_json_data = loadBarsFromAsset(context, index);
+		//make call to the network, and get web service data with ASYNC call
+        new RequestTask().execute(index); // IS THIS PASSING CORRECT ARG? OR DO WE PASS "bars"??
+
+        //loads bars from local storage
+		//String bars_json_data = loadBarsFromAsset(context, index);
 
 		try {
 
-			JSONObject jsonObject = new JSONObject (bars_json_data);
-			JSONArray barsArray = jsonObject.getJSONArray("bars");
+			//adjust how you parse json object and array
+            JSONArray barsArray = new JSONArray("bars"); // THIS SHOULD BE CORRECT FORMAT; http://cssgate.insttech.washington.edu/~lukecl/Android/bar1.php GIVES JSON ARRAY FORMAT.
+
+			//JSONObject jsonObject = new JSONObject (bars_json_data);
+			//JSONArray barsArray = jsonObject.getJSONArray("bars");
 
 			for (int a=0; a<barsArray.length(); a++){
 
@@ -50,11 +67,16 @@ public class AppUtility {
 				bar.ADDRESS = barObject.getString(ADDRESS);
 				bar.PHONE_NUMBER = barObject.getString(PHONE_NUMBER);
 				bar.ABOUT = barObject.getString(ABOUT);
-				bar.IMAGE_NAME = barObject.getString(IMAGE);
 				bar.LONGITUDE = barObject.getDouble(LONGITUDE);
 				bar.LATITUDE = barObject.getDouble(LATITUDE);
+                bar.IMAGE_NAME = barObject.getString(IMAGE); // moved from above long/lat
+
+
 
 				bars.add(bar);
+
+				//add bars to local database in PHASE 2
+				//create helper method
 			}
 
 		} catch (JSONException e) {
@@ -64,8 +86,9 @@ public class AppUtility {
 		return bars;
 	}
 
-	//Retrieve bars data from asset
-	private static String loadBarsFromAsset(Context context, int index){
+
+/**	//Retrieve bars data from asset
+	private static String loadBarsFromAsset(Context context, String index){
 
 		InputStream inputstream = null;
 
@@ -87,7 +110,7 @@ public class AppUtility {
 		} catch (IOException e){
 			throw new RuntimeException(e);
 		}
-	}
+	}*/
 
 
 	public static Bitmap getLargeImageFromAsset(Context context, String imageName){
@@ -175,4 +198,41 @@ public class AppUtility {
 					}
 				}).create().show();
 	}
+
+	//ADD ASYNC CALL TO WEB SERVICE
+    public static class RequestTask extends AsyncTask<String, String, String> {
+
+        @Override
+        protected String doInBackground(String... uri) {
+            HttpClient httpclient = new DefaultHttpClient();
+            HttpResponse response;
+            String responseString = null;
+            try {
+                response = httpclient.execute(new HttpGet(uri[0]));
+                StatusLine statusLine = response.getStatusLine();
+                if(statusLine.getStatusCode() == HttpStatus.SC_OK){
+                    ByteArrayOutputStream out = new ByteArrayOutputStream();
+                    response.getEntity().writeTo(out);
+                    responseString = out.toString();
+                    out.close();
+                } else{
+                    //Closes the connection.
+                    response.getEntity().getContent().close();
+                    throw new IOException(statusLine.getReasonPhrase());
+                }
+            } catch (ClientProtocolException e) {
+                //TODO Handle problems..
+            } catch (IOException e) {
+                //TODO Handle problems..
+            }
+            return responseString;
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            super.onPostExecute(result);
+            //Do anything with response..
+        }
+    }
+
 }

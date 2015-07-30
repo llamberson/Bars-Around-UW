@@ -20,7 +20,9 @@ public class ListFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.list_fragment, container, false);
 
-        int index = getArguments().getInt("bars");
+        //change getInt to getString
+        String index = getArguments().getString("bars");
+        //int index = getArguments().getInt("bars");
 
         list = (ListView) view.findViewById(R.id.list);
         list.setAdapter(new BarListAdapter (getActivity(),  AppUtility.getBars(getActivity(), index)));
