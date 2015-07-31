@@ -1,6 +1,11 @@
 package app.bar.arounduw.fragments;
 
-import java.util.ArrayList;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -12,12 +17,8 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import java.util.ArrayList;
+
 import app.bar.arounduw.BarDetailsActivity;
 import app.bar.arounduw.R;
 import app.bar.arounduw.model.Bar;
@@ -39,8 +40,8 @@ public class MapFragment extends Fragment{
 
     private void setUpMap(Bundle savedInstanceState){
 
-        String index = getArguments().getString("bars");
-        final ArrayList<Bar> bars = AppUtility.getBars(getActivity(), index);
+        String url = getArguments().getString("bars");
+        //final ArrayList<Bar> bars = AppUtility.getBars(getActivity(), url);
 
         //Initiate Google maps
         mapview = (MapView) view.findViewById(R.id.map);
@@ -59,9 +60,9 @@ public class MapFragment extends Fragment{
             googleMap.getUiSettings().setZoomControlsEnabled(true);
             googleMap.getUiSettings().setCompassEnabled(true);
             googleMap.getUiSettings().setAllGesturesEnabled(true);
-            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(bars.get(0).LATITUDE, bars.get(0).LONGITUDE), 10));
+            //googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(bars.get(0).LATITUDE, bars.get(0).LONGITUDE), 10));
 
-            //Set Bar markers on the map.
+/*            //Set Bar markers on the map.
             for (int i=0; i<bars.size(); i++){
 
                 MarkerOptions marker = new MarkerOptions()
@@ -87,7 +88,9 @@ public class MapFragment extends Fragment{
                     startActivity(intent);
                 }
             });
+                    */
         }
+
     }
 
     @Override

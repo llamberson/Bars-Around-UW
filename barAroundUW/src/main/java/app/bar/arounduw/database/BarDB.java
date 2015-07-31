@@ -1,13 +1,14 @@
 package app.bar.arounduw.database;
 
-import java.util.ArrayList;
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteDatabase.CursorFactory;
+import android.database.sqlite.SQLiteOpenHelper;
+
+import java.util.ArrayList;
+
 import app.bar.arounduw.model.Bar;
 
 public class BarDB {

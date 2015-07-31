@@ -1,14 +1,16 @@
 package app.bar.arounduw;
 
-import com.example.android.common.view.SlidingTabLayout;
-
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
-import app.bar.arounduw.fragments.*;
+
+import com.example.android.common.view.SlidingTabLayout;
+
+import app.bar.arounduw.fragments.FavoriteListFragment;
+import app.bar.arounduw.fragments.FavoriteMapFragment;
 
 
 	public class FavoriteBarsActivity extends ActionBarActivity {

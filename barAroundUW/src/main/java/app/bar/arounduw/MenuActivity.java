@@ -1,18 +1,21 @@
 package app.bar.arounduw;
 
-import com.facebook.AccessToken;
-import com.facebook.AccessTokenTracker;
-import com.facebook.FacebookSdk;
-import com.facebook.login.widget.LoginButton;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+
+import com.facebook.AccessToken;
+import com.facebook.AccessTokenTracker;
+import com.facebook.FacebookSdk;
+import com.facebook.login.widget.LoginButton;
+
+import app.bar.arounduw.fragments.ListFragment;
 
 public class MenuActivity extends Activity {
 
@@ -58,9 +61,7 @@ public class MenuActivity extends Activity {
 
 
 	public void setUpUI(){
-
 		((TextView)findViewById(R.id.title)).setTypeface(tf);
-
 		//If user logged in as a guest -------------------------
 		//Remove login-button
 		if (!logged_in_via_facebook){

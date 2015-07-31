@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+
 import app.bar.arounduw.R;
 import app.bar.arounduw.adapter.BarListAdapter;
 import app.bar.arounduw.utils.AppUtility;
@@ -21,11 +22,12 @@ public class ListFragment extends Fragment{
         view = inflater.inflate(R.layout.list_fragment, container, false);
 
         //change getInt to getString
-        String index = getArguments().getString("bars");
+        String url = getArguments().getString("bars");
         //int index = getArguments().getInt("bars");
 
         list = (ListView) view.findViewById(R.id.list);
-        list.setAdapter(new BarListAdapter (getActivity(),  AppUtility.getBars(getActivity(), index)));
+
+        list.setAdapter(new BarListAdapter (getActivity(),  AppUtility.getBars(getActivity(), url)));
 
         return view;
     }

@@ -1,14 +1,17 @@
 package app.bar.arounduw;
 
-import com.example.android.common.view.SlidingTabLayout;
-
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
-import app.bar.arounduw.fragments.*;
+import android.util.Log;
+
+import com.example.android.common.view.SlidingTabLayout;
+
+import app.bar.arounduw.fragments.ListFragment;
+import app.bar.arounduw.fragments.MapFragment;
 
 
 public class BarsActivity extends ActionBarActivity {
@@ -30,7 +33,6 @@ public class BarsActivity extends ActionBarActivity {
 
 
 	public void setUpUI(){
-
 		mpager= (ViewPager) findViewById(R.id.pager);
 		mpager.setAdapter(new TabsAdapter(getSupportFragmentManager()));
 
@@ -75,13 +77,13 @@ public class BarsActivity extends ActionBarActivity {
 			switch (index) {
 				case 0:
 					Bundle b1 = new Bundle();
-					b1.putInt("bars", getIntent().getIntExtra("bars", 1));
+					b1.putString("bars", getIntent().getStringExtra("bars"));
 					ListFragment f1 = new ListFragment();
 					f1.setArguments(b1);
 					return f1;
 				case 1:
 					Bundle b2 = new Bundle();
-					b2.putInt("bars", getIntent().getIntExtra("bars", 1));
+					b2.putString("bars", getIntent().getStringExtra("bars"));
 					MapFragment f2 = new MapFragment();
 					f2.setArguments(b2);
 					return f2;

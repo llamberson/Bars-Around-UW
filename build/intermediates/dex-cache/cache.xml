@@ -9,18 +9,18 @@
         <dex dex="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-0034d807b84492fede19edcc4a5bfbc1cc93509b.jar" />
     </item>
     <item
-        jar="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\exploded-aar\App project V2\facebookSDK\unspecified\libs\bolts-android-1.1.4.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="129874135e6081269ace2312092031558865de12">
-        <dex dex="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-604e304b077e3911ac27f2edbdc344f17dd401c1.jar" />
-    </item>
-    <item
         jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
         <dex dex="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-aa16b3cf885393ef74ba8407c65bcf20627dd05b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\exploded-aar\App project V2\facebookSDK\unspecified\libs\bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-604e304b077e3911ac27f2edbdc344f17dd401c1.jar" />
     </item>
     <item
         jar="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services\4.2.42\classes.jar"
@@ -33,7 +33,7 @@
         jar="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\exploded-aar\App project V2\facebookSDK\unspecified\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="42fd6563493bcfa5189775ed242fb845d49de92b">
+        sha1="802e1c687e834d09fe8b05129d8d2119d78836ba">
         <dex dex="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\pre-dexed\debug\classes-84e2b9962bbfef939d48f4b623066c9656a3abac.jar" />
     </item>
     <item
