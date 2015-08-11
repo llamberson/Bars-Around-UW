@@ -97,7 +97,8 @@ public class AppUtility {
         return  bars;
     }
 
-    private static ArrayList<Bar> setBars(String result){
+    public static ArrayList<Bar> setBars(String result){
+        ArrayList<Bar> bars = new ArrayList<Bar>();
         try {
 
             //adjust how you parse json object and array

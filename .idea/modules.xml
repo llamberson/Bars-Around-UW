@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/App project V2.iml" filepath="$PROJECT_DIR$/App project V2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bars-Around-UW.iml" filepath="$PROJECT_DIR$/Bars-Around-UW.iml" />
       <module fileurl="file://$PROJECT_DIR$/barAroundUW/barAroundUW.iml" filepath="$PROJECT_DIR$/barAroundUW/barAroundUW.iml" />
       <module fileurl="file://$PROJECT_DIR$/facebookSDK/facebookSDK.iml" filepath="$PROJECT_DIR$/facebookSDK/facebookSDK.iml" />
     </modules>

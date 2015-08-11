@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- From: file:/C:/Users/Luke/Desktop/App%20project%20V2/barAroundUW/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-da/values.xml -->
+    <!-- From: file:/Users/ankitsabhaya/Desktop/TCSS%20450/Bars-Around-UW/barAroundUW/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-da/values.xml -->
     <eat-comment/>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Naviger hjem"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
@@ -17,7 +17,7 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Talesøgning"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Del med"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Del med %s"</string>
-    <!-- From: file:/C:/Users/Luke/Desktop/App%20project%20V2/barAroundUW/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.2.42/res/values-da/strings.xml -->
+    <!-- From: file:/Users/ankitsabhaya/Desktop/TCSS%20450/Bars-Around-UW/barAroundUW/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.2.42/res/values-da/strings.xml -->
     <eat-comment/>
     <string msgid="3983201110833868073" name="auth_client_needs_enabling_title">"En applikation kræver, at Google Play er aktiveret."</string>
     <string msgid="7999585836145154206" name="auth_client_needs_installation_title">"En applikation kræver, at Google Play er installeret."</string>
@@ -25,7 +25,7 @@
     <string msgid="3635065018897986478" name="auth_client_play_services_err_notification_msg">"Fejl i Google Play-tjenester"</string>
     <string msgid="6304135633531965756" name="auth_client_requested_by_msg">"Anmodning fra <ns1:g id="APP_NAME">%1$s</ns1:g>"</string>
     <string msgid="2534454398764507874" name="auth_client_using_bad_version_title">"En applikation forsøgte at bruge en defekt version af Google Play."</string>
-    <!-- From: file:/C:/Users/Luke/Desktop/App%20project%20V2/barAroundUW/build/intermediates/exploded-aar/App%20project%20V2/facebookSDK/unspecified/res/values-da/values.xml -->
+    <!-- From: file:/Users/ankitsabhaya/Desktop/TCSS%20450/Bars-Around-UW/barAroundUW/build/intermediates/exploded-aar/Bars-Around-UW/facebookSDK/unspecified/res/values-da/values.xml -->
     <eat-comment/>
     <string name="com_facebook_image_download_unknown_error">Der opstod en uventet fejl under download af et billede.</string>
     <string name="com_facebook_internet_permission_error_message">WebView-login kræver tilladelse til INTERNET</string>
@@ -43,7 +43,7 @@
     <string name="com_facebook_send_button_text">Send</string>
     <string name="com_facebook_share_button_text">Del</string>
     <string name="com_facebook_tooltip_default">Nyhed! Du har styringen – vælg de oplysninger, som du vil dele med apps.</string>
-    <!-- From: file:/C:/Users/Luke/Desktop/App%20project%20V2/barAroundUW/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.2.42/res/values-da/strings.xml -->
+    <!-- From: file:/Users/ankitsabhaya/Desktop/TCSS%20450/Bars-Around-UW/barAroundUW/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.2.42/res/values-da/strings.xml -->
     <eat-comment/>
     <string msgid="4181637455539816337" name="common_google_play_services_enable_button">"Aktivér Google Play-tjenester"</string>
     <string msgid="7627896071867667758" name="common_google_play_services_enable_text">"Denne app virker ikke, medmindre du aktiverer Google Play-tjenester."</string>
@@ -65,7 +65,7 @@
     <string msgid="6006316683626838685" name="common_google_play_services_update_title">"Opdater Google Play-tjenester"</string>
     <string msgid="9071884888741449141" name="common_signin_button_text">"Log ind"</string>
     <string msgid="2429381841831957106" name="common_signin_button_text_long">"Log ind med Google"</string>
-    <!-- From: file:/C:/Users/Luke/Desktop/App%20project%20V2/barAroundUW/build/intermediates/exploded-aar/App%20project%20V2/facebookSDK/unspecified/res/values-da/values.xml -->
+    <!-- From: file:/Users/ankitsabhaya/Desktop/TCSS%20450/Bars-Around-UW/barAroundUW/build/intermediates/exploded-aar/Bars-Around-UW/facebookSDK/unspecified/res/values-da/values.xml -->
     <eat-comment/>
     <string name="messenger_send_button_text">Send</string>
 </resources>
