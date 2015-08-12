@@ -1,12 +1,10 @@
 package app.bar.arounduw;
 
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 
 import com.example.android.common.view.SlidingTabLayout;
 
@@ -16,85 +14,82 @@ import app.bar.arounduw.fragments.MapFragment;
 
 public class BarsActivity extends ActionBarActivity {
 
-	private ViewPager mpager;
-	private SlidingTabLayout mTabs;
-
-	Typeface tf;
-
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_bars);
-
-		setUpUI();
-	}
+    private SlidingTabLayout mTabs;
 
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
 
-	public void setUpUI(){
-		mpager= (ViewPager) findViewById(R.id.pager);
-		mpager.setAdapter(new TabsAdapter(getSupportFragmentManager()));
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_bars);
 
-		mTabs = (SlidingTabLayout) findViewById(R.id.tab);
-		mTabs.setBackgroundColor(getResources().getColor(R.color.sky_blue));
-		mTabs.setViewPager(mpager);
-
-	}
-
-	@Override
-	protected void onResume() {
-		super.onResume();
-	}
-
-	@Override
-	public void onPause() {
-		super.onPause();
-	}
-
-	@Override
-	public void onDestroy() {
-		super.onDestroy();
-	}
+        setUpUI();
+    }
 
 
-	public class TabsAdapter extends FragmentPagerAdapter {
+    public void setUpUI() {
+        ViewPager mpager = (ViewPager) findViewById(R.id.pager);
+        mpager.setAdapter(new TabsAdapter(getSupportFragmentManager()));
 
-		String[] tabs = {"List", "MAP"};
+        mTabs = (SlidingTabLayout) findViewById(R.id.tab);
+        mTabs.setBackgroundColor(getResources().getColor(R.color.sky_blue));
+        mTabs.setViewPager(mpager);
 
-		public TabsAdapter (android.support.v4.app.FragmentManager fm) {
-			super(fm);
-		}
+    }
 
-		@Override
-		public CharSequence getPageTitle(int position){
-			return tabs[position];
-		}
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
 
-		@Override
-		public Fragment getItem(int index) {
+    @Override
+    public void onPause() {
+        super.onPause();
+    }
 
-			switch (index) {
-				case 0:
-					Bundle b1 = new Bundle();
-					b1.putString("bars", getIntent().getStringExtra("bars"));
-					ListFragment f1 = new ListFragment();
-					f1.setArguments(b1);
-					return f1;
-				case 1:
-					Bundle b2 = new Bundle();
-					b2.putString("bars", getIntent().getStringExtra("bars"));
-					MapFragment f2 = new MapFragment();
-					f2.setArguments(b2);
-					return f2;
-			}
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+    }
 
-			return null;
-		}
 
-		@Override
-		public int getCount() {
-			return 2;
-		}
-	}
+    public class TabsAdapter extends FragmentPagerAdapter {
+
+        String[] tabs = {"List", "MAP"};
+
+        public TabsAdapter(android.support.v4.app.FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return tabs[position];
+        }
+
+        @Override
+        public Fragment getItem(int index) {
+
+            switch (index) {
+                case 0:
+                    Bundle b1 = new Bundle();
+                    b1.putString("bars", getIntent().getStringExtra("bars"));
+                    ListFragment f1 = new ListFragment();
+                    f1.setArguments(b1);
+                    return f1;
+                case 1:
+                    Bundle b2 = new Bundle();
+                    b2.putString("bars", getIntent().getStringExtra("bars"));
+                    MapFragment f2 = new MapFragment();
+                    f2.setArguments(b2);
+                    return f2;
+            }
+
+            return null;
+        }
+
+        @Override
+        public int getCount() {
+            return 2;
+        }
+    }
 }

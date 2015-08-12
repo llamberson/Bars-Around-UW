@@ -38,20 +38,20 @@ import app.bar.arounduw.model.Bar;
 import app.bar.arounduw.utils.AppUtility;
 
 
-public class MapFragment extends Fragment{
+public class MapFragment extends Fragment {
 
     View view = null;
     private MapView mapview;
     private GoogleMap googleMap;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.map_fragment, container, false);
         setUpMap(savedInstanceState);
         return view;
     }
 
-    private void setUpMap(Bundle savedInstanceState){
+    private void setUpMap(Bundle savedInstanceState) {
 
         String url = getArguments().getString("bars");
         //final ArrayList<Bar> bars = AppUtility.getBars(getActivity(), url);
@@ -81,7 +81,7 @@ public class MapFragment extends Fragment{
         ArrayList<Bar> bars;
         String url;
 
-        public SetBars(String url){
+        public SetBars(String url) {
             this.url = url;
         }
 
@@ -89,7 +89,7 @@ public class MapFragment extends Fragment{
         @Override
         protected void onPreExecute() {
             dialog = ProgressDialog.show(getActivity(), "", "Preparing Bars ...", true, false);
-        };
+        }
 
         @Override
         protected String doInBackground(String... params) {
@@ -127,12 +127,12 @@ public class MapFragment extends Fragment{
             super.onPostExecute(content);
             dialog.dismiss();
 
-            if (bars.size()>0) {
+            if (bars.size() > 0) {
                 googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
                 googleMap.getUiSettings().setZoomControlsEnabled(true);
                 googleMap.getUiSettings().setCompassEnabled(true);
                 googleMap.getUiSettings().setAllGesturesEnabled(true);
-                googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(bars.get(0).LATITUDE, bars.get(0).LONGITUDE), 10));
+                googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(bars.get(1).LATITUDE, bars.get(1).LONGITUDE), 13));
 
                 //Set Bar markers on the map.
                 for (int i = 0; i < bars.size(); i++) {
@@ -169,7 +169,7 @@ public class MapFragment extends Fragment{
     @Override
     public void onResume() {
         super.onResume();
-        if (mapview!=null){
+        if (mapview != null) {
             mapview.onResume();
         }
     }
@@ -177,7 +177,7 @@ public class MapFragment extends Fragment{
     @Override
     public void onPause() {
         super.onPause();
-        if (mapview!=null){
+        if (mapview != null) {
             mapview.onPause();
         }
     }
@@ -185,7 +185,7 @@ public class MapFragment extends Fragment{
     @Override
     public void onDestroy() {
         super.onDestroy();
-        if (mapview!=null){
+        if (mapview != null) {
             mapview.onDestroy();
         }
     }
@@ -193,7 +193,7 @@ public class MapFragment extends Fragment{
     @Override
     public void onLowMemory() {
         super.onLowMemory();
-        if (mapview!=null){
+        if (mapview != null) {
             mapview.onLowMemory();
         }
     }

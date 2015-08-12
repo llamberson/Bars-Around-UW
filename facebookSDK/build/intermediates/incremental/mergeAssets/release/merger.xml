@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/facebookSDK/src/main/assets"/></dataSet><dataSet config="release"><source path="/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/facebookSDK/src/release/assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\Users\Luke\Desktop\App project V2\facebookSDK\src\main\assets"/></dataSet><dataSet config="release"><source path="C:\Users\Luke\Desktop\App project V2\facebookSDK\src\release\assets"/></dataSet></merger>

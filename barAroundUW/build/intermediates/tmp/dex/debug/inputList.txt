@@ -1,8 +1,0 @@
-/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/classes/debug
-/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-82560516554b0da36d3c31bf90d93269258db099.jar
-/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-15a2ad7beb4e9efa102f87621808f589cd135da0.jar
-/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-6e7ed66269bd106ee73a888df0ae0d0ba59e816c.jar
-/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/pre-dexed/debug/classes-a2686b11b6fa12d6c7917ea10af50379637ef8a2.jar
-/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/pre-dexed/debug/classes-982016c3848bb2c333e4a047dd3d371e1f68a26f.jar
-/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/pre-dexed/debug/classes-8692faf65a6141f7da22027478392ec322ac99dd.jar
-/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/pre-dexed/debug/classes-1753cb90b46c47cf772be143a6adcf6191b11ee4.jar

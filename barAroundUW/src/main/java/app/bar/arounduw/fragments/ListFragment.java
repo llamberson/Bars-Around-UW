@@ -37,9 +37,7 @@ public class ListFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.list_fragment, container, false);
 
-        //change getInt to getString
         String url = getArguments().getString("bars");
-        //int index = getArguments().getInt("bars");
 
         list = (ListView) view.findViewById(R.id.list);
 
@@ -68,7 +66,7 @@ public class ListFragment extends Fragment{
         @Override
         protected void onPreExecute() {
             dialog = ProgressDialog.show(getActivity(), "", "Preparing Bars ...", true, false);
-        };
+        }
 
         @Override
         protected String doInBackground(String... params) {

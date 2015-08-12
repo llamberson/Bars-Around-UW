@@ -6,7 +6,6 @@ import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
-import android.util.Log;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
@@ -45,7 +44,6 @@ public class AppUtility {
 
     //Get array list of bars
     public static ArrayList<Bar> getBars(Context context, String url) {
-        Log.d("ERROR", "got to getBars method in AppUtility");
         bars = new ArrayList<>();
         new RequestTask().execute(url);
         while(bars == null) {

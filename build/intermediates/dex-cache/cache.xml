@@ -2,53 +2,53 @@
 <items version="2" >
 
     <item
-        jar="/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/pre-dexed/debug/classes-a2686b11b6fa12d6c7917ea10af50379637ef8a2.jar" />
-    </item>
-    <item
-        jar="/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/exploded-aar/Bars-Around-UW/facebookSDK/unspecified/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="2f1b6011140704fe6d690127af8847fec722a601">
-        <dex dex="/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/pre-dexed/debug/classes-982016c3848bb2c333e4a047dd3d371e1f68a26f.jar" />
-    </item>
-    <item
-        jar="/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.2.42/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="e5f81129dfb3d02df80126512bc98278ed2bb40a">
-        <dex dex="/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/pre-dexed/debug/classes-1753cb90b46c47cf772be143a6adcf6191b11ee4.jar" />
-    </item>
-    <item
-        jar="/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jar="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/pre-dexed/debug/classes-8692faf65a6141f7da22027478392ec322ac99dd.jar" />
+        <dex dex="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\pre-dexed\debug\classes-843cfb38b4a5a464cb3a0f25d81d9bd9211d2575.jar" />
     </item>
     <item
-        jar="/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-6e7ed66269bd106ee73a888df0ae0d0ba59e816c.jar" />
-    </item>
-    <item
-        jar="/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/exploded-aar/Bars-Around-UW/facebookSDK/unspecified/libs/bolts-android-1.1.4.jar"
+        jar="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\exploded-aar\App project V2\facebookSDK\unspecified\jars\libs\bolts-android-1.1.4.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="129874135e6081269ace2312092031558865de12">
-        <dex dex="/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-15a2ad7beb4e9efa102f87621808f589cd135da0.jar" />
+        <dex dex="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-3be5caf6a7d34d823c36ad6cbb51d1229b4cb7ae.jar" />
     </item>
     <item
-        jar="/Users/ankitsabhaya/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jar="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\exploded-aar\App project V2\facebookSDK\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7e013b7627cdd300a06e0d95f2ab55b7479e9ef3">
+        <dex dex="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\pre-dexed\debug\classes-3316115c4b80bec4009991f7968f2d414abbb9b3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-38eea3150fb028289793b342a9426c82032a269a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services\4.2.42\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e5f81129dfb3d02df80126512bc98278ed2bb40a">
+        <dex dex="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\pre-dexed\debug\classes-4bc6d495be6c69ea480f2c87cdca1bb435c06c1c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\pre-dexed\debug\classes-62d5f8fe68a2707d4231e0478f35d4d44dd2b0d8.jar" />
+    </item>
+    <item
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/Users/ankitsabhaya/Desktop/TCSS 450/Bars-Around-UW/barAroundUW/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-82560516554b0da36d3c31bf90d93269258db099.jar" />
+        <dex dex="C:\Users\Luke\Desktop\App project V2\barAroundUW\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-aa16b3cf885393ef74ba8407c65bcf20627dd05b.jar" />
     </item>
 
 </items>

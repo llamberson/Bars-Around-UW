@@ -25,35 +25,35 @@ import app.bar.arounduw.database.BarDB;
 import app.bar.arounduw.model.Bar;
 
 
-public class FavoriteMapFragment extends Fragment{
+public class FavoriteMapFragment extends Fragment {
 
-	View view = null;
-	private MapView mapview;
-	private GoogleMap googleMap;
-	
-	BarDB db;
-	
+    View view = null;
+    private MapView mapview;
+    private GoogleMap googleMap;
+
+    BarDB db;
+
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.map_fragment, container, false);
-        
-        db= new BarDB(getActivity());
-		ArrayList<Bar> bars = db.getFavoriteBars();
-		
-		if (bars.size()>0){
-			setUpMap(savedInstanceState);
-		}else{
-			//AppUtility.showDialog(getActivity(), "You have no favorite bars.");
-		}
-		
+
+        db = new BarDB(getActivity());
+        ArrayList<Bar> bars = db.getFavoriteBars();
+
+        if (bars.size() > 0) {
+            setUpMap(savedInstanceState);
+        } else {
+            //AppUtility.showDialog(getActivity(), "You have no favorite bars.");
+        }
+
         return view;
     }
-    
-    private void setUpMap(Bundle savedInstanceState){
 
-    	final ArrayList<Bar> bars = db.getFavoriteBars();
-    	
-		//Initiate Google maps
+    private void setUpMap(Bundle savedInstanceState) {
+
+        final ArrayList<Bar> bars = db.getFavoriteBars();
+
+        //Initiate Google maps
         mapview = (MapView) view.findViewById(R.id.map);
         mapview.onCreate(savedInstanceState);
         mapview.onResume();
@@ -62,75 +62,75 @@ public class FavoriteMapFragment extends Fragment{
         } catch (Exception e) {
             e.printStackTrace();
         }
-        
-        googleMap = mapview.getMap();
-       // googleMap.setMyLocationEnabled(true);//enable user location
-        
-        if (googleMap != null) {
-	        googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-	        googleMap.getUiSettings().setZoomControlsEnabled(true);
-	        googleMap.getUiSettings().setCompassEnabled(true);
-	        googleMap.getUiSettings().setAllGesturesEnabled(true);
-	        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(bars.get(0).LATITUDE, bars.get(0).LONGITUDE), 10));
-	        
-            //Set Bar markers on the map.
-            for (int i=0; i<bars.size(); i++){
 
-            	MarkerOptions marker = new MarkerOptions()
-            	                       .position(new LatLng(bars.get(i).LATITUDE, bars.get(i).LONGITUDE))
-            	                       .title(bars.get(i).NAME);
-            	marker.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE));
-            	marker.snippet(bars.get(i).ABOUT);
-            	
-            	//Add marker to google map
-            	googleMap.addMarker(marker);
+        googleMap = mapview.getMap();
+        // googleMap.setMyLocationEnabled(true);//enable user location
+
+        if (googleMap != null) {
+            googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+            googleMap.getUiSettings().setZoomControlsEnabled(true);
+            googleMap.getUiSettings().setCompassEnabled(true);
+            googleMap.getUiSettings().setAllGesturesEnabled(true);
+            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(bars.get(0).LATITUDE, bars.get(0).LONGITUDE), 10));
+
+            //Set Bar markers on the map.
+            for (int i = 0; i < bars.size(); i++) {
+
+                MarkerOptions marker = new MarkerOptions()
+                        .position(new LatLng(bars.get(i).LATITUDE, bars.get(i).LONGITUDE))
+                        .title(bars.get(i).NAME);
+                marker.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE));
+                marker.snippet(bars.get(i).ABOUT);
+
+                //Add marker to google map
+                googleMap.addMarker(marker);
             }
-            
-           	googleMap.setOnInfoWindowClickListener(new OnInfoWindowClickListener(){
-					@Override
-					public void onInfoWindowClick(Marker marker) {
-						
-						String marker_name = marker.getId();//m1, m2, m3 ...m22
-						//extract number
-						int position = Integer.parseInt(marker_name.substring(1, marker_name.length()));
-						
-						Intent intent = new Intent(getActivity(), BarDetailsActivity.class);
-						intent.putExtra("bar", bars.get(position));
-						startActivity(intent);
-					}
+
+            googleMap.setOnInfoWindowClickListener(new OnInfoWindowClickListener() {
+                @Override
+                public void onInfoWindowClick(Marker marker) {
+
+                    String marker_name = marker.getId();//m1, m2, m3 ...m22
+                    //extract number
+                    int position = Integer.parseInt(marker_name.substring(1, marker_name.length()));
+
+                    Intent intent = new Intent(getActivity(), BarDetailsActivity.class);
+                    intent.putExtra("bar", bars.get(position));
+                    startActivity(intent);
+                }
             });
         }
     }
-    
+
     @Override
     public void onResume() {
         super.onResume();
-        if (mapview!=null){
-        	mapview.onResume();
+        if (mapview != null) {
+            mapview.onResume();
         }
     }
-    
+
     @Override
     public void onPause() {
         super.onPause();
-        if (mapview!=null){
-        	mapview.onPause();
+        if (mapview != null) {
+            mapview.onPause();
         }
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        if (mapview!=null){
-        	mapview.onDestroy();
+        if (mapview != null) {
+            mapview.onDestroy();
         }
     }
 
     @Override
     public void onLowMemory() {
         super.onLowMemory();
-        if (mapview!=null){
-        	mapview.onLowMemory();
+        if (mapview != null) {
+            mapview.onLowMemory();
         }
     }
 }
