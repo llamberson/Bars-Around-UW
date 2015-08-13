@@ -75,15 +75,15 @@ public class BarListAdapter extends BaseAdapter {
         final Bitmap favorite = BitmapFactory.decodeResource(context.getResources(), R.drawable.favorite);
         final Bitmap favorite_not = BitmapFactory.decodeResource(context.getResources(), R.drawable.favorite_not);
 
-        if (logged_in_via_facebook = true) {
+        if (!logged_in_via_facebook) {
+            rowView.findViewById(R.id.favorite).setVisibility(View.INVISIBLE);
+        } else {
             //Set favorite views -----------------------
             if (isFavoriteBar(bar)) {
                 ((ImageView) rowView.findViewById(R.id.favorite)).setImageBitmap(favorite);
             } else {
                 ((ImageView) rowView.findViewById(R.id.favorite)).setImageBitmap(favorite_not);
             }
-        } else {
-            rowView.findViewById(R.id.favorite).setVisibility(View.INVISIBLE);
         }
 
         (rowView.findViewById(R.id.favorite)).setOnClickListener(new OnClickListener() {

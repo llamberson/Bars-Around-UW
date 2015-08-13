@@ -44,7 +44,7 @@
             android:gravity="center"
             android:text="@string/my_favorite"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/white"
+            android:textColor="@color/gold"
             android:textStyle="bold"
             android:hapticFeedbackEnabled="true"
             android:onClick="openFavorites"/>
@@ -59,7 +59,7 @@
             android:gravity="center"
             android:text="@string/bar_1"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/white"
+            android:textColor="@color/gold"
             android:textStyle="bold"
             android:hapticFeedbackEnabled="true"
             android:onClick="openBar1"/>
@@ -74,7 +74,7 @@
             android:gravity="center"
             android:text="@string/bar_2"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/white"
+            android:textColor="@color/gold"
             android:textStyle="bold"
             android:hapticFeedbackEnabled="true"
             android:onClick="openBar2"/>
@@ -89,7 +89,7 @@
             android:gravity="center"
             android:text="@string/bar_3"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/white"
+            android:textColor="@color/gold"
             android:textStyle="bold"
             android:hapticFeedbackEnabled="true"
             android:onClick="openBar3"/>
@@ -101,4 +101,4 @@
     </LinearLayout>
 
 </RelativeLayout>
-<!-- From: file:/C:/Users/Luke/Desktop/App%20project%20V2/barAroundUW/src/main/res/layout/activity_menu.xml -->
+<!-- From: file:/C:/Users/Luke/AndroidStudioProjects/Bars-Around-UW/barAroundUW/src/main/res/layout/activity_menu.xml -->

@@ -48,7 +48,7 @@
         android:gravity="center"
         android:text="@string/login_as_guest"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/white"
+        android:textColor="@color/gold"
         android:textStyle="bold"
         android:hapticFeedbackEnabled="true"
         android:onClick="openMenu"/>

@@ -48,11 +48,11 @@
         android:gravity="center"
         android:text="@string/login_as_guest"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/white"
+        android:textColor="@color/gold"
         android:textStyle="bold"
         android:hapticFeedbackEnabled="true"
         android:onClick="openMenu"/>
     </LinearLayout>
     
 </RelativeLayout>
-<!-- From: file:/C:/Users/Luke/Desktop/App%20project%20V2/barAroundUW/src/main/res/layout/activity_login.xml -->
+<!-- From: file:/C:/Users/Luke/AndroidStudioProjects/Bars-Around-UW/barAroundUW/src/main/res/layout/activity_login.xml -->
