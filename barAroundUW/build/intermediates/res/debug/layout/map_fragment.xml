@@ -11,4 +11,4 @@
 		android:layout_height="match_parent">
 	</com.google.android.gms.maps.MapView>
         
-</RelativeLayout><!-- From: file:/C:/Users/Luke/AndroidStudioProjects/Bars-Around-UW/barAroundUW/src/main/res/layout/map_fragment.xml -->
+</RelativeLayout><!-- From: file:/D:/AndroidStudioProjects/Bars-Around-UW/barAroundUW/src/main/res/layout/map_fragment.xml -->

@@ -75,6 +75,7 @@ public class BarListAdapter extends BaseAdapter {
         final Bitmap favorite = BitmapFactory.decodeResource(context.getResources(), R.drawable.favorite);
         final Bitmap favorite_not = BitmapFactory.decodeResource(context.getResources(), R.drawable.favorite_not);
 
+        //check if user logged into facebook or not, and display favorites
         if (!logged_in_via_facebook) {
             rowView.findViewById(R.id.favorite).setVisibility(View.INVISIBLE);
         } else {

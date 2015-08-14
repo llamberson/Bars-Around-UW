@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,6 +44,7 @@ public class MapFragment extends Fragment {
     View view = null;
     private MapView mapview;
     private GoogleMap googleMap;
+    private static final String TAG = "MapFragment";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -111,9 +113,9 @@ public class MapFragment extends Fragment {
                     throw new IOException(statusLine.getReasonPhrase());
                 }
             } catch (ClientProtocolException e) {
-                //TODO Handle problems..
+                Log.d(TAG, "ClientProtocolException=" + e.getMessage());
             } catch (IOException e) {
-                //TODO Handle problems..
+                Log.d(TAG, "IOException=" + e.getMessage());
             }
             //return responseString;
 

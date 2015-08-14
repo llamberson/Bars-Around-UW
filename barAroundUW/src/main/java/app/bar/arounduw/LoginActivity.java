@@ -99,9 +99,6 @@ public class LoginActivity extends Activity {
         if (isUserLoggedIn()) {
             //Navigate to menu activity ---------------
             openMenu();
-        } else {
-            //Do nothing--------------
-            //Wait for user action ----------------
         }
     }
 

@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
+import android.util.Log;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
@@ -35,8 +36,7 @@ public class AppUtility {
     private static final String IMAGE = "image";
     private static final String LONGITUDE = "longitude";
     private static final String LATITUDE = "latitude";
-
-    private static ArrayList bars;
+    private static final String TAG = "AppUtility";
 
 
     public AppUtility() {
@@ -44,66 +44,18 @@ public class AppUtility {
 
     //Get array list of bars
     public static ArrayList<Bar> getBars(Context context, String url) {
-        bars = new ArrayList<>();
+        ArrayList bars = new ArrayList<>();
         new RequestTask().execute(url);
-        while(bars == null) {
-
+        while (bars == null) {
+            //count-down hack for async
         }
-
-        //make call to the network, and get web service data with ASYNC call
-
-
-        //loads bars from local storage
-        //String bars_json_data = loadBarsFromAsset(context, index);
-
-            /*
-            try {
-
-                //adjust how you parse json object and array
-                JSONArray barsArray = new JSONArray(returnValue);
-
-                //JSONObject jsonObject = new JSONObject (bars_json_data);
-                //JSONArray barsArray = jsonObject.getJSONArray(returnValue);
-
-                for (int a = 0; a < barsArray.length(); a++) {
-
-                    JSONObject barObject = barsArray.getJSONObject(a);
-
-                    Bar bar = new Bar();
-
-                    bar.NAME = barObject.getString(NAME);
-                    bar.ADDRESS = barObject.getString(ADDRESS);
-                    bar.PHONE_NUMBER = barObject.getString(PHONE_NUMBER);
-                    bar.ABOUT = barObject.getString(ABOUT);
-                    bar.LONGITUDE = barObject.getDouble(LONGITUDE);
-                    bar.LATITUDE = barObject.getDouble(LATITUDE);
-                    bar.IMAGE_NAME = barObject.getString(IMAGE); // moved from above long/lat
-
-
-                    bars.add(bar);
-
-                    //add bars to local database in PHASE 2
-                    //create helper method
-                }
-
-
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-
-        */
-        return  bars;
+        return bars;
     }
 
-    public static ArrayList<Bar> setBars(String result){
-        ArrayList<Bar> bars = new ArrayList<Bar>();
+    public static ArrayList<Bar> setBars(String result) {
+        ArrayList<Bar> bars = new ArrayList<>();
         try {
-
-            //adjust how you parse json object and array
             JSONArray barsArray = new JSONArray(result);
-
-            //JSONObject jsonObject = new JSONObject (bars_json_data);
-            //JSONArray barsArray = jsonObject.getJSONArray(returnValue);
 
             for (int a = 0; a < barsArray.length(); a++) {
 
@@ -118,51 +70,15 @@ public class AppUtility {
                 bar.LONGITUDE = barObject.getDouble(LONGITUDE);
                 bar.LATITUDE = barObject.getDouble(LATITUDE);
                 bar.IMAGE_NAME = barObject.getString(IMAGE); // moved from above long/lat
-
-
                 bars.add(bar);
-
-                //add bars to local database in PHASE 2
-                //create helper method
             }
 
 
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
-
         return bars;
     }
-
-
-    /**
-     * //Retrieve bars data from asset
-     * private static String loadBarsFromAsset(Context context, String index){
-     * <p/>
-     * InputStream inputstream = null;
-     * <p/>
-     * try{
-     * switch (index){
-     * case 1: inputstream = context.getAssets().open("bars/bar_1.xml"); break;
-     * case 2: inputstream = context.getAssets().open("bars/bar_2.xml"); break;
-     * case 3: inputstream = context.getAssets().open("bars/bar_3.xml"); break;
-     * }
-     * <p/>
-     * int size = inputstream.available();
-     * byte[] buffer = new byte[size];
-     * inputstream.read(buffer);
-     * inputstream.close();
-     * String text = new String(buffer);
-     * <p/>
-     * return text;
-     * <p/>
-     * } catch (IOException e){
-     * throw new RuntimeException(e);
-     * }
-     * }
-     */
-
 
     public static Bitmap getLargeImageFromAsset(Context context, String imageName) {
 
@@ -273,9 +189,9 @@ public class AppUtility {
                     throw new IOException(statusLine.getReasonPhrase());
                 }
             } catch (ClientProtocolException e) {
-                //TODO Handle problems..
+                Log.d(TAG, "ClientProtocolException=" + e.getMessage());
             } catch (IOException e) {
-                //TODO Handle problems..
+                Log.d(TAG, "IOException=" + e.getMessage());
             }
             return responseString;
         }

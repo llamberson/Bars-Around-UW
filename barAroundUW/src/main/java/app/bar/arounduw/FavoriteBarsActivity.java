@@ -1,6 +1,5 @@
 package app.bar.arounduw;
 
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -15,11 +14,6 @@ import app.bar.arounduw.fragments.FavoriteMapFragment;
 
 public class FavoriteBarsActivity extends ActionBarActivity {
 
-    private ViewPager mpager;
-    private SlidingTabLayout mTabs;
-
-    Typeface tf;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -32,10 +26,10 @@ public class FavoriteBarsActivity extends ActionBarActivity {
 
     public void setUpUI() {
 
-        mpager = (ViewPager) findViewById(R.id.pager);
+        ViewPager mpager = (ViewPager) findViewById(R.id.pager);
         mpager.setAdapter(new TabsAdapter(getSupportFragmentManager()));
 
-        mTabs = (SlidingTabLayout) findViewById(R.id.tab);
+        SlidingTabLayout mTabs = (SlidingTabLayout) findViewById(R.id.tab);
         mTabs.setBackgroundColor(getResources().getColor(R.color.sky_blue));
         mTabs.setViewPager(mpager);
 

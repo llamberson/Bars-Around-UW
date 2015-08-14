@@ -64,7 +64,6 @@ public class FavoriteMapFragment extends Fragment {
         }
 
         googleMap = mapview.getMap();
-        // googleMap.setMyLocationEnabled(true);//enable user location
 
         if (googleMap != null) {
             googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);

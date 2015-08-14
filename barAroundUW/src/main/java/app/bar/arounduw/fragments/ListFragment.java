@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,6 +33,7 @@ public class ListFragment extends Fragment{
 
     View view = null;
     ListView list;
+    private static final String TAG = "ListFragment";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
@@ -89,11 +91,10 @@ public class ListFragment extends Fragment{
                     throw new IOException(statusLine.getReasonPhrase());
                 }
             } catch (ClientProtocolException e) {
-                //TODO Handle problems..
+                Log.d(TAG, "ClientProtocolException=" + e.getMessage());
             } catch (IOException e) {
-                //TODO Handle problems..
+                Log.d(TAG, "IOException=" + e.getMessage());
             }
-            //return responseString;
 
             bars = AppUtility.setBars(responseString);
 

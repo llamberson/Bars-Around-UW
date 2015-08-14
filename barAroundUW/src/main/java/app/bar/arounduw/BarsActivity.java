@@ -14,8 +14,6 @@ import app.bar.arounduw.fragments.MapFragment;
 
 public class BarsActivity extends ActionBarActivity {
 
-    private SlidingTabLayout mTabs;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +29,7 @@ public class BarsActivity extends ActionBarActivity {
         ViewPager mpager = (ViewPager) findViewById(R.id.pager);
         mpager.setAdapter(new TabsAdapter(getSupportFragmentManager()));
 
-        mTabs = (SlidingTabLayout) findViewById(R.id.tab);
+        SlidingTabLayout mTabs = (SlidingTabLayout) findViewById(R.id.tab);
         mTabs.setBackgroundColor(getResources().getColor(R.color.sky_blue));
         mTabs.setViewPager(mpager);
 
