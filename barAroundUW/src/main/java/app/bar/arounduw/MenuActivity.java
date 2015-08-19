@@ -13,11 +13,28 @@ import com.facebook.AccessToken;
 import com.facebook.AccessTokenTracker;
 import com.facebook.FacebookSdk;
 
+/**
+ * The Class MenuActivity represents the activity for the menu.
+ *
+ * @author Ankit Sabhaya, Luke Lamberson
+ * @version 1.0.1
+ */
 public class MenuActivity extends Activity {
+
+    /** The typeface. */
     Typeface tf;
+
+    /** The shared preferences. */
     SharedPreferences sharedpreferences;
+
+    /** The logged_in_via_facebook. */
     boolean logged_in_via_facebook = false;
 
+    /**
+     * On create.
+     *
+     * @param savedInstanceState the saved instance state
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -35,6 +52,9 @@ public class MenuActivity extends Activity {
     }
 
 
+    /**
+     * Sets the facebook log out listener.
+     */
     public void setFacebookLogOutListener() {
         //If user logged in via facebook -------------------------
         //Listen for logout event. -------------------------------
@@ -52,7 +72,9 @@ public class MenuActivity extends Activity {
 
     }
 
-
+    /**
+     * Sets the up ui.
+     */
     public void setUpUI() {
         ((TextView) findViewById(R.id.title)).setTypeface(tf);
         //If user logged in as a guest -------------------------
@@ -63,28 +85,51 @@ public class MenuActivity extends Activity {
         }
     }
 
+    /**
+     * Open bar 1.
+     *
+     * @param v the view
+     */
     public void openBar1(View v) {
         Intent i = new Intent(this, BarsActivity.class);
         i.putExtra("bars", "http://cssgate.insttech.washington.edu/~lukecl/Android/bar1.php");
         startActivity(i);
     }
 
+    /**
+     * Open bar 2.
+     *
+     * @param v the view
+     */
     public void openBar2(View v) {
         Intent i = new Intent(this, BarsActivity.class);
         i.putExtra("bars", "http://cssgate.insttech.washington.edu/~lukecl/Android/bar2.php");
         startActivity(i);
     }
 
+    /**
+     * Open bar 3.
+     *
+     * @param v the view
+     */
     public void openBar3(View v) {
         Intent i = new Intent(this, BarsActivity.class);
         i.putExtra("bars", "http://cssgate.insttech.washington.edu/~lukecl/Android/bar3.php");
         startActivity(i);
     }
 
+    /**
+     * Open favorites.
+     *
+     * @param v the v
+     */
     public void openFavorites(View v) {
         startActivity(new Intent(this, FavoriteBarsActivity.class));
     }
 
+    /**
+     * On resume.
+     */
     @Override
     protected void onResume() {
         super.onResume();
@@ -92,16 +137,25 @@ public class MenuActivity extends Activity {
         setFacebookLogOutListener();
     }
 
+    /**
+     * On pause.
+     */
     @Override
     public void onPause() {
         super.onPause();
     }
 
+    /**
+     * On destroy.
+     */
     @Override
     public void onDestroy() {
         super.onDestroy();
     }
 
+    /**
+     * On back pressed.
+     */
     @Override
     public void onBackPressed() {
         super.onDestroy();

@@ -38,14 +38,34 @@ import app.bar.arounduw.R;
 import app.bar.arounduw.model.Bar;
 import app.bar.arounduw.utils.AppUtility;
 
-
+/**
+ * The Class MapFragment represents the fragment for the map.
+ *
+ * @author Ankit Sabhaya, Luke Lamberson
+ * @version 1.0.1
+ */
 public class MapFragment extends Fragment {
 
+    /** The view. */
     View view = null;
+
+    /** The map view. */
     private MapView mapview;
+
+    /** The google map. */
     private GoogleMap googleMap;
+
+    /** The map fragment */
     private static final String TAG = "MapFragment";
 
+    /**
+     * On create view.
+     *
+     * @param inflater the inflater
+     * @param container the container
+     * @param savedInstanceState the saved instance state
+     * @return the view
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.map_fragment, container, false);
@@ -53,6 +73,11 @@ public class MapFragment extends Fragment {
         return view;
     }
 
+    /**
+     * Sets the map.
+     *
+     * @param savedInstanceState the new map
+     */
     private void setUpMap(Bundle savedInstanceState) {
 
         String url = getArguments().getString("bars");
@@ -76,23 +101,44 @@ public class MapFragment extends Fragment {
 
     }
 
-
+    /**
+     * The Class SetBars represents an asynchronous task to set the bars.
+     */
     public class SetBars extends AsyncTask<String, Integer, String> {
 
+        /** The dialog. */
         ProgressDialog dialog = null;
+
+        /** The bars. */
         ArrayList<Bar> bars;
+
+        /** The url. */
         String url;
 
+        /**
+         * Instantiates a new sets the bars.
+         *
+         * @param url the url
+         */
         public SetBars(String url) {
             this.url = url;
         }
 
+        /**
+         * On pre execute.
+         */
         @SuppressLint("InflateParams")
         @Override
         protected void onPreExecute() {
             dialog = ProgressDialog.show(getActivity(), "", "Preparing Bars ...", true, false);
         }
 
+        /**
+         * Do in background.
+         *
+         * @param params the params
+         * @return the string
+         */
         @Override
         protected String doInBackground(String... params) {
             HttpClient httpclient = new DefaultHttpClient();
@@ -124,6 +170,11 @@ public class MapFragment extends Fragment {
             return "";
         }
 
+        /**
+         * On post execute.
+         *
+         * @param content the content
+         */
         @Override
         protected void onPostExecute(String content) {
             super.onPostExecute(content);
@@ -168,6 +219,9 @@ public class MapFragment extends Fragment {
     }
 
 
+    /**
+     * On resume.
+     */
     @Override
     public void onResume() {
         super.onResume();
@@ -176,6 +230,9 @@ public class MapFragment extends Fragment {
         }
     }
 
+    /**
+     * On pause.
+     */
     @Override
     public void onPause() {
         super.onPause();
@@ -184,6 +241,9 @@ public class MapFragment extends Fragment {
         }
     }
 
+    /**
+     * On destroy.
+     */
     @Override
     public void onDestroy() {
         super.onDestroy();
@@ -192,6 +252,9 @@ public class MapFragment extends Fragment {
         }
     }
 
+    /**
+     * On low memory.
+     */
     @Override
     public void onLowMemory() {
         super.onLowMemory();

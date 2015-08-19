@@ -20,12 +20,28 @@ import com.facebook.login.widget.LoginButton;
 
 import app.bar.arounduw.utils.AppUtility;
 
+/**
+ * The Class LoginActivity represents the activity for the login.
+ *
+ * @author Ankit Sabhaya, Luke Lamberson
+ * @version 1.0.1
+ */
 public class LoginActivity extends Activity {
 
+    /** The facebook callback manager. */
     private CallbackManager facebookCallbackManager;
+
+    /** The typeface. */
     Typeface tf;
+
+    /** The editor. */
     SharedPreferences.Editor editor;
 
+    /**
+     * On create.
+     *
+     * @param savedInstanceState the saved instance state
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -44,6 +60,9 @@ public class LoginActivity extends Activity {
         setUpUI();
     }
 
+    /**
+     * Sets the up ui.
+     */
     public void setUpUI() {
 
         ((TextView) findViewById(R.id.title)).setTypeface(tf);
@@ -67,6 +86,11 @@ public class LoginActivity extends Activity {
         });
     }
 
+    /**
+     * Open menu.
+     *
+     * @param v the view
+     */
     public void openMenu(View v) {
         //save login status-----------
         editor.putBoolean("LOGGED_IN_VIA_FACEBOOK", false);
@@ -75,6 +99,9 @@ public class LoginActivity extends Activity {
         startActivity(new Intent(this, MenuActivity.class));
     }
 
+    /**
+     * Open menu.
+     */
     public void openMenu() {
         //save login status-----------
         editor.putBoolean("LOGGED_IN_VIA_FACEBOOK", true);
@@ -83,7 +110,11 @@ public class LoginActivity extends Activity {
         startActivity(new Intent(this, MenuActivity.class));
     }
 
-    /*Method to Check if user is logged in*/
+    /**
+     * Method to Check if user is logged in
+     *
+     *  @return true if user has logged in, false otherwise
+     */
     public boolean isUserLoggedIn() {
         Profile profile = Profile.getCurrentProfile();
         AccessToken accessToken = AccessToken.getCurrentAccessToken();
@@ -91,6 +122,9 @@ public class LoginActivity extends Activity {
         return profile != null && accessToken != null;
     }
 
+    /**
+     * On resume.
+     */
     @Override
     protected void onResume() {
         super.onResume();
@@ -102,16 +136,29 @@ public class LoginActivity extends Activity {
         }
     }
 
+    /**
+     * On pause.
+     */
     @Override
     public void onPause() {
         super.onPause();
     }
 
+    /**
+     * On destroy.
+     */
     @Override
     public void onDestroy() {
         super.onDestroy();
     }
 
+    /**
+     * On activity result.
+     *
+     * @param requestCode the request code
+     * @param resultCode the result code
+     * @param data the data
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         facebookCallbackManager.onActivityResult(requestCode, resultCode, data);

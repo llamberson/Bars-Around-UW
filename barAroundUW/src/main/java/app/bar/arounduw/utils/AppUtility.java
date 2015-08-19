@@ -27,22 +27,53 @@ import java.util.ArrayList;
 
 import app.bar.arounduw.model.Bar;
 
+/**
+ * The Class AppUtility provides different utility functions for the app.
+ *
+ * @author Ankit Sabhaya, Luke Lamberson
+ * @version 1.0.1
+ */
 public class AppUtility {
 
+    /** The constant name name. */
     private static final String NAME = "name";
+
+    /** The constant address name. */
     private static final String ADDRESS = "address";
+
+    /** The constant phone number name. */
     private static final String PHONE_NUMBER = "phone";
+
+    /** The constant about name. */
     private static final String ABOUT = "about";
+
+    /** The constant image name. */
     private static final String IMAGE = "image";
+
+    /** The constant longitude name. */
     private static final String LONGITUDE = "longitude";
+
+    /** The constant latitude name. */
     private static final String LATITUDE = "latitude";
+
+    /** The constant tag name. */
     private static final String TAG = "AppUtility";
 
 
+    /**
+     * Instantiates a new app utility.
+     */
     public AppUtility() {
     }
 
     //Get array list of bars
+    /**
+     * Gets the bars from the context and the url.
+     *
+     * @param context the context
+     * @param url the url
+     * @return the bars
+     */
     public static ArrayList<Bar> getBars(Context context, String url) {
         ArrayList bars = new ArrayList<>();
         new RequestTask().execute(url);
@@ -51,7 +82,12 @@ public class AppUtility {
         }
         return bars;
     }
-
+    /**
+     * This method sets the bars.
+     *
+     * @param result the result
+     * @return the array list
+     */
     public static ArrayList<Bar> setBars(String result) {
         ArrayList<Bar> bars = new ArrayList<>();
         try {
@@ -80,6 +116,13 @@ public class AppUtility {
         return bars;
     }
 
+    /**
+     * This method gets the large image from asset.
+     *
+     * @param context the context
+     * @param imageName the image name
+     * @return the large image from asset
+     */
     public static Bitmap getLargeImageFromAsset(Context context, String imageName) {
 
         Bitmap b = null;
@@ -108,6 +151,13 @@ public class AppUtility {
         return b;
     }
 
+    /**
+     * This method gets the thumbnail from asset.
+     *
+     * @param context the context
+     * @param imageName the image name
+     * @return the thumbnail from asset
+     */
     public static Bitmap getThumbnailFromAsset(Context context, String imageName) {
 
         Bitmap b = null;
@@ -136,6 +186,14 @@ public class AppUtility {
         return b;
     }
 
+    /**
+     * This method gets the input sample size.
+     *
+     * @param options the options
+     * @param outputWidth the output width
+     * @param outputHeight the output height
+     * @return the input sample size
+     */
     private static int getInSampleSize(BitmapFactory.Options options, int outputWidth, int outputHeight) {
 
         //Actual image height & width ---------
@@ -155,6 +213,12 @@ public class AppUtility {
         return inSampleSize;
     }
 
+    /**
+     * This method shows the dialog.
+     *
+     * @param context the context
+     * @param message the message
+     */
     public static void showDialog(Context context, String message) {
         new AlertDialog.Builder(context)
                 .setCancelable(false)
@@ -167,8 +231,19 @@ public class AppUtility {
     }
 
     //ADD ASYNC CALL TO WEB SERVICE
+
+    /**
+     * The Class RequestTask represents an
+     * asynchronous task for a request.
+     */
     public static class RequestTask extends AsyncTask<String, String, String> {
 
+        /**
+         * Do in background.
+         *
+         * @param uri the uri
+         * @return the string
+         */
         @Override
         protected String doInBackground(String... uri) {
             HttpClient httpclient = new DefaultHttpClient();
@@ -196,6 +271,11 @@ public class AppUtility {
             return responseString;
         }
 
+        /**
+         * On post execute.
+         *
+         * @param result the result
+         */
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);

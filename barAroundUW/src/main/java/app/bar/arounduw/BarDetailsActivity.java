@@ -27,17 +27,40 @@ import app.bar.arounduw.database.BarDB;
 import app.bar.arounduw.model.Bar;
 import app.bar.arounduw.utils.AppUtility;
 
+/**
+ * The Class BarDetailsActivity represents the activity for the bar details.
+ *
+ * @author Ankit Sabhaya, Luke Lamberson
+ * @version 1.0.1
+ */
 public class BarDetailsActivity extends Activity {
 
+    /** The bar db. */
     BarDB db;
+
+    /** The typeface. */
     Typeface tf;
+
+    /** The bar. */
     Bar bar;
 
+    /** The shared preferences. */
     SharedPreferences sharedpreferences;
+
+    /** The flag if logged in via facebook. */
     boolean logged_in_via_facebook = false;
 
+    /** The facebook callback manager. */
     private CallbackManager facebookCallbackManager;
+
+    /** The bar share dialog. */
     ShareDialog barShareDialog;
+
+    /**
+     * This is the on create method.
+     *
+     * @param savedInstanceState the saved instance state
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +81,11 @@ public class BarDetailsActivity extends Activity {
         setUpUI();
     }
 
+    /**
+     * This is the share bar.
+     *
+     * @param v the view
+     */
     public void shareBar(View v) {
 
         if (ShareDialog.canShow(ShareLinkContent.class)) {
@@ -84,12 +112,22 @@ public class BarDetailsActivity extends Activity {
 
     }
 
+    /**
+     * This will call bar the bar location.
+     *
+     * @param v the view
+     */
     public void callBar(View v) {
         String number = "tel:" + bar.PHONE_NUMBER;
         Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse(number));
         startActivity(callIntent);
     }
 
+    /**
+     * This will update the favorite bar.
+     *
+     * @param v the view
+     */
     public void updateFavoriteBar(View v) {
 
         //Create favorite/not_favorite bitmaps ----------------------------------
@@ -105,6 +143,9 @@ public class BarDetailsActivity extends Activity {
         }
     }
 
+    /**
+     * This method sets the up ui.
+     */
     public void setUpUI() {
 
         //If user logged in as a guest -------------------------
@@ -159,6 +200,12 @@ public class BarDetailsActivity extends Activity {
     }
 
     //Determine if it's a favorite bar -----
+    /**
+     * This checks if bar is favorite bar.
+     *
+     * @param bar the bar
+     * @return true if bar is favorite bar, false otherwise
+     */
     private boolean isFavoriteBar(Bar bar) {
 
         ArrayList<Bar> bars = db.getFavoriteBars();
@@ -179,21 +226,37 @@ public class BarDetailsActivity extends Activity {
         return false;
     }
 
+    /**
+     * On resume.
+     */
     @Override
     protected void onResume() {
         super.onResume();
     }
 
+    /**
+     * On pause.
+     */
     @Override
     public void onPause() {
         super.onPause();
     }
 
+    /**
+     * On destroy.
+     */
     @Override
     public void onDestroy() {
         super.onDestroy();
     }
 
+    /**
+     * This is on activity result.
+     *
+     * @param requestCode the request code
+     * @param resultCode the result code
+     * @param data the data
+     */
     @Override
     protected void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

@@ -28,13 +28,31 @@ import app.bar.arounduw.adapter.BarListAdapter;
 import app.bar.arounduw.model.Bar;
 import app.bar.arounduw.utils.AppUtility;
 
-
+/**
+ * The Class ListFragment represents the fragment for the list.
+ *
+ * @author Ankit Sabhaya, Luke Lamberson
+ * @version 1.0.1
+ */
 public class ListFragment extends Fragment{
 
+    /** The view. */
     View view = null;
+
+    /** The list. */
     ListView list;
+
+    /** The string tag*/
     private static final String TAG = "ListFragment";
 
+    /**
+     * On create view.
+     *
+     * @param inflater the inflater
+     * @param container the container
+     * @param savedInstanceState the saved instance state
+     * @return the view
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.list_fragment, container, false);
@@ -48,28 +66,52 @@ public class ListFragment extends Fragment{
         return view;
     }
 
+    /**
+     * On resume.
+     */
     @Override
     public void onResume() {
         super.onResume();
     }
 
-
+    /**
+     * The Class SetBars represents an asynchronous task to set the bars.
+     */
     public class SetBars extends AsyncTask<String, Integer, String> {
 
+        /** The dialog. */
         ProgressDialog dialog = null;
+
+        /** The bars. */
         ArrayList<Bar> bars;
+
+        /** The url. */
         String url;
 
+        /**
+         * Instantiates a new sets the bars.
+         *
+         * @param url the url
+         */
         public SetBars(String url){
             this.url = url;
         }
 
+        /**
+         * On pre execute.
+         */
         @SuppressLint("InflateParams")
         @Override
         protected void onPreExecute() {
             dialog = ProgressDialog.show(getActivity(), "", "Preparing Bars ...", true, false);
         }
 
+        /**
+         * Do in background.
+         *
+         * @param params the params
+         * @return the string
+         */
         @Override
         protected String doInBackground(String... params) {
 
@@ -101,6 +143,11 @@ public class ListFragment extends Fragment{
             return "";
         }
 
+        /**
+         * On post execute.
+         *
+         * @param content the content
+         */
         @Override
         protected void onPostExecute(String content) {
             super.onPostExecute(content);

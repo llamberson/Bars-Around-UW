@@ -24,15 +24,35 @@ import app.bar.arounduw.database.BarDB;
 import app.bar.arounduw.model.Bar;
 import app.bar.arounduw.utils.AppUtility;
 
-
+/**
+ * The Class BarListAdapter represents the base adapter for the bar list.
+ *
+ * @author Ankit Sabhaya, Luke Lamberson
+ * @version 1.0.1
+ */
 public class BarListAdapter extends BaseAdapter {
 
+    /** The context. */
     private final Context context;
+
+    /** The bars. */
     ArrayList<Bar> bars;
+
+    /** The bar db. */
     BarDB db;
+
+    /** The flag if logged in via facebook. */
     boolean logged_in_via_facebook;
+
+    /** The shared preferences. */
     SharedPreferences sharedpreferences;
 
+    /**
+     * This method instantiates a new bar list adapter.
+     *
+     * @param context the context
+     * @param bars the bars
+     */
     @SuppressLint("InflateParams")
     public BarListAdapter(Context context, ArrayList<Bar> bars) {
 
@@ -44,19 +64,45 @@ public class BarListAdapter extends BaseAdapter {
         logged_in_via_facebook = sharedpreferences.getBoolean("LOGGED_IN_VIA_FACEBOOK", false);
     }
 
+    /**
+     * Gets the count of the bars.
+     *
+     * @return the countof the bars
+     */
     public int getCount() {
         return bars.size();
     }
 
+    /**
+     * Gets the item.
+     *
+     * @param position the position
+     * @return the item
+     */
     @Override
     public Object getItem(int position) {
         return null;
     }
 
+    /**
+     * Gets the item id.
+     *
+     * @param position the position
+     * @return the item id
+     */
     @Override
     public long getItemId(int position) {
         return 0;
     }
+
+    /**
+     * This method gets the view.
+     *
+     * @param position the position
+     * @param convertView the convert view
+     * @param parent the parent
+     * @return the view
+     */
 
     @SuppressLint({"ViewHolder", "InflateParams"})
     @Override
@@ -113,6 +159,13 @@ public class BarListAdapter extends BaseAdapter {
     }
 
     //Determine if it's a favorite bar -----
+
+    /**
+     * This method checks if bar is favorite bar.
+     *
+     * @param bar the bar
+     * @return true if bar is favorite bar
+     */
     private boolean isFavoriteBar(Bar bar) {
 
         ArrayList<Bar> bars = db.getFavoriteBars();

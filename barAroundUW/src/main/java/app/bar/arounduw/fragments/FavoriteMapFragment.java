@@ -24,15 +24,33 @@ import app.bar.arounduw.R;
 import app.bar.arounduw.database.BarDB;
 import app.bar.arounduw.model.Bar;
 
-
+/**
+ * The Class FavoriteMapFragment represents the fragment for the favorite map.
+ * @author Ankit Sabhaya, Luke Lamberson
+ * @version 1.0.1
+ */
 public class FavoriteMapFragment extends Fragment {
 
+    /** The view. */
     View view = null;
+
+    /** The map view. */
     private MapView mapview;
+
+    /** The google map. */
     private GoogleMap googleMap;
 
+    /** The bar db. */
     BarDB db;
 
+    /**
+     * On create view.
+     *
+     * @param inflater the inflater
+     * @param container the container
+     * @param savedInstanceState the saved instance state
+     * @return the view
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.map_fragment, container, false);
@@ -49,6 +67,11 @@ public class FavoriteMapFragment extends Fragment {
         return view;
     }
 
+    /**
+     * This sets the map.
+     *
+     * @param savedInstanceState the new map
+     */
     private void setUpMap(Bundle savedInstanceState) {
 
         final ArrayList<Bar> bars = db.getFavoriteBars();
@@ -101,6 +124,9 @@ public class FavoriteMapFragment extends Fragment {
         }
     }
 
+    /**
+     * On resume.
+     */
     @Override
     public void onResume() {
         super.onResume();
@@ -109,6 +135,9 @@ public class FavoriteMapFragment extends Fragment {
         }
     }
 
+    /**
+     * On pause.
+     */
     @Override
     public void onPause() {
         super.onPause();
@@ -117,6 +146,9 @@ public class FavoriteMapFragment extends Fragment {
         }
     }
 
+    /**
+     * On destroy.
+     */
     @Override
     public void onDestroy() {
         super.onDestroy();
@@ -125,6 +157,9 @@ public class FavoriteMapFragment extends Fragment {
         }
     }
 
+    /**
+     * On low memory.
+     */
     @Override
     public void onLowMemory() {
         super.onLowMemory();

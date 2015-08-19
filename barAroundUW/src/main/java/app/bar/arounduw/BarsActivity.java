@@ -11,10 +11,20 @@ import com.example.android.common.view.SlidingTabLayout;
 import app.bar.arounduw.fragments.ListFragment;
 import app.bar.arounduw.fragments.MapFragment;
 
-
+/**
+ * The Class BarsActivity represents the activity for the bars.
+ *
+ * @author Ankit Sabhaya, Luke Lamberson
+ * @version 1.0.1
+ */
 public class BarsActivity extends AppCompatActivity {
 
 
+    /**
+     * On create.
+     *
+     * @param savedInstanceState the saved instance state
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -24,7 +34,9 @@ public class BarsActivity extends AppCompatActivity {
         setUpUI();
     }
 
-
+    /**
+     * This method sets the up ui.
+     */
     public void setUpUI() {
         ViewPager mpager = (ViewPager) findViewById(R.id.pager);
         mpager.setAdapter(new TabsAdapter(getSupportFragmentManager()));
@@ -35,35 +47,64 @@ public class BarsActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * On resume.
+     */
     @Override
     protected void onResume() {
         super.onResume();
     }
 
+    /**
+     * On pause.
+     */
     @Override
     public void onPause() {
         super.onPause();
     }
 
+    /**
+     * On destroy.
+     */
     @Override
     public void onDestroy() {
         super.onDestroy();
     }
 
-
+    /**
+     * The Class TabsAdapter represents the fragment pager adapter for the tabs.
+     */
     public class TabsAdapter extends FragmentPagerAdapter {
 
+        /** The tabs. */
         String[] tabs = {"List", "MAP"};
 
+        /**
+         * This method instantiates a new tabs adapter.
+         *
+         * @param fm the fragment manager
+         */
         public TabsAdapter(android.support.v4.app.FragmentManager fm) {
             super(fm);
         }
 
+        /**
+         * This gets the page title.
+         *
+         * @param position the position
+         * @return the page title
+         */
         @Override
         public CharSequence getPageTitle(int position) {
             return tabs[position];
         }
 
+        /**
+         * This gets the item.
+         *
+         * @param index the index
+         * @return the item
+         */
         @Override
         public Fragment getItem(int index) {
 
@@ -85,6 +126,11 @@ public class BarsActivity extends AppCompatActivity {
             return null;
         }
 
+        /**
+         * This gets the count.
+         *
+         * @return the count
+         */
         @Override
         public int getCount() {
             return 2;

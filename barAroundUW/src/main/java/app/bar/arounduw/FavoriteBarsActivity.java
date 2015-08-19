@@ -11,9 +11,19 @@ import com.example.android.common.view.SlidingTabLayout;
 import app.bar.arounduw.fragments.FavoriteListFragment;
 import app.bar.arounduw.fragments.FavoriteMapFragment;
 
-
+/**
+ * The Class FavoriteBarsActivity represents the activity for the favorite bars.
+ *
+ * @author Ankit Sabhaya, Luke Lamberson
+ * @version 1.0.1
+ */
 public class FavoriteBarsActivity extends ActionBarActivity {
 
+    /**
+     * On create.
+     *
+     * @param savedInstanceState the saved instance state
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -23,7 +33,9 @@ public class FavoriteBarsActivity extends ActionBarActivity {
         setUpUI();
     }
 
-
+    /**
+     * This sets the up ui.
+     */
     public void setUpUI() {
 
         ViewPager mpager = (ViewPager) findViewById(R.id.pager);
@@ -35,35 +47,65 @@ public class FavoriteBarsActivity extends ActionBarActivity {
 
     }
 
+    /**
+     * On resume.
+     */
     @Override
     protected void onResume() {
         super.onResume();
     }
 
+    /**
+     * On pause.
+     */
     @Override
     public void onPause() {
         super.onPause();
     }
 
+    /**
+     * On destroy.
+     */
     @Override
     public void onDestroy() {
         super.onDestroy();
     }
 
 
+    /**
+     * The Class TabsAdapter represents the fragment pager adapter for the tabs.
+     */
     public class TabsAdapter extends FragmentPagerAdapter {
 
+        /** The tabs. */
         String[] tabs = {"List", "MAP"};
 
+        /**
+         * Instantiates a new tabs adapter.
+         *
+         * @param fm the fragment manager
+         */
         public TabsAdapter(android.support.v4.app.FragmentManager fm) {
             super(fm);
         }
 
+        /**
+         * Gets the page title.
+         *
+         * @param position the position
+         * @return the page title
+         */
         @Override
         public CharSequence getPageTitle(int position) {
             return tabs[position];
         }
 
+        /**
+         * Gets the item.
+         *
+         * @param index the index
+         * @return the item
+         */
         @Override
         public Fragment getItem(int index) {
 
@@ -77,6 +119,11 @@ public class FavoriteBarsActivity extends ActionBarActivity {
             return null;
         }
 
+        /**
+         * Gets the count.
+         *
+         * @return the count
+         */
         @Override
         public int getCount() {
             return 2;

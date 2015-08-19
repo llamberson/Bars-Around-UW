@@ -7,9 +7,12 @@ import com.robotium.solo.Solo;
 import app.bar.arounduw.LoginActivity;
 
 /**
- * @author Luke Lamberson, Ankit Sabhaya
+ *
  * There are no javadoc comments for these test methods, as their names
  * are self-explanatory.
+ *
+ * @author Luke Lamberson, Ankit Sabhaya
+ * @version 1.0.0
  */
 public class LoginActivityTest extends ActivityInstrumentationTestCase2<LoginActivity>{
     private Solo solo;
