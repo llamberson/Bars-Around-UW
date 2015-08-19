@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 
 import com.example.android.common.view.SlidingTabLayout;
 
@@ -12,7 +12,7 @@ import app.bar.arounduw.fragments.ListFragment;
 import app.bar.arounduw.fragments.MapFragment;
 
 
-public class BarsActivity extends ActionBarActivity {
+public class BarsActivity extends AppCompatActivity {
 
 
     @Override

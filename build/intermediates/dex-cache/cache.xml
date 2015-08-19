@@ -2,18 +2,60 @@
 <items version="2" >
 
     <item
-        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\jars\classes.jar"
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-ff4a13b7d6d1674aef625a7f06954d8c4f4c5135.jar" />
+        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-74f5e72f2be8195404aa128726520a2d0185890d.jar" />
     </item>
     <item
-        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-aa16b3cf885393ef74ba8407c65bcf20627dd05b.jar" />
+        sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-d315e605e4924ae9f7214fb3147d17ba506d210a.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-1c11edac4acce00c142f613f31c512188d0fcf21.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-b57207cc39e14362763969a5d48a840a25e1f283.jar" />
+    </item>
+    <item
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-db1bb2a3f1608a31c38a2d1f5698fe71cc45038a.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="02bac2dc792d78241077861566f2c82da955e7fa">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-45ddc88af6860a52dba61d18d608b8704f56291e.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a78183f30e769a98ab4820794f597763088d3065">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-153f7c16f1b45886e730ee210cb0cf0da54fed68.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="63ec6e9f4fe5482a7447d0f3091b8e543a02554c">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-7f35bc1ec055febbcbe6058fa2e3858628bf033d.jar" />
     </item>
     <item
         jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\Bars-Around-UW\facebookSDK\unspecified\jars\libs\bolts-android-1.1.4.jar"
@@ -23,32 +65,144 @@
         <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-0086a10d0326b353337e8b496396ece3da4eab2f.jar" />
     </item>
     <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-ab9640107588798bae3f97531a55522b54f71ce0.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d405025c600055237c171a0bbabaa49d69696573">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-a8741b47b92995a388ccf73dec8abd0e994f720b.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-104e5d40b372cc088857a14081e24d819d00f943.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ba3df4eb0a630d7de294f0e48d3f9267d279b784">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-8d832c661cb4c90286ffba0f61b31873975bb8a7.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="06a42becc33232ec0ee125161da68c1829c9f8fd">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-aae94fc031739f6cd88513ed6a6aae3e4e988b20.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1a6411087ab88ce5542f593e63a2752b6b0d6f1a">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-8501a3e0541aea8f185f18099566e96c10b5f21d.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\libs\robotium-solo-5.4.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8cf467c87b83c959fd7e8aef842127abce72fc5c">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\robotium-solo-5.4.1-0c5485c76d62ad9c6a2dc1855f99695735fcd18f.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-9b7ace1402abb027d2aca480d86cf1ed12963b15.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-7d7cb8e41bd137e5496bc3a72e3d6e2f975b23fd.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-9b5f0d784de1767ca3b9edfb16f67b8fc1e06115.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8e3a972f28b8bae817e382257ba177a31bcadbbc">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-d52b305fd8bbf277c751e63b01edd7e540b2ef7a.jar" />
+    </item>
+    <item
         jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\Bars-Around-UW\facebookSDK\unspecified\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="6c272fe9695c3442c7f5a4fe0448f43bc26d51bd">
+        sha1="ab8657a7973db4406b3f21d30768307ee81571fa">
         <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-6cb3dd72089181f7c7b363ef6021433bdbb7b5d9.jar" />
     </item>
     <item
-        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-44872f78bebdd891284fbac3b100927e10c165ae.jar" />
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-590f48fbc3fbd7ba7eb22d18fcce8e2fc39bc3e6.jar" />
     </item>
     <item
-        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\libs\internal_impl-21.0.3.jar"
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.5.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-0a9f54b7b646033ba7afd93b312a2870e8766b9b.jar" />
+        sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-dd96fa73e2fd6a811af11ee29b84524e9102a32d.jar" />
     </item>
     <item
-        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services\4.2.42\jars\classes.jar"
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="e5f81129dfb3d02df80126512bc98278ed2bb40a">
-        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-9107de7908cd9fb33bd80bc70afdc262d75dcd98.jar" />
+        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-c4c5e9d166fefd98df485a6901967ca96ee80011.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-106f425a60daecdc86a5b7ef8f5795a4c9a150c5.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="272bc5d7063f24bc3a33ea1d318cde8f31f5ec4c">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-781fe63e7a17b079ccae2b83677aff15c68e1dfb.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-30f9a5bce50738ce479f112ca308891f409f441f.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f44d03c138cb6488fdbaa65e3a7e5878861a56d8">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-21250013ca6ec02d73d3791bec07e4a1a90f68bc.jar" />
+    </item>
+    <item
+        jar="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ba207be21987c11b37d9f8faa08ed6e722569f30">
+        <dex dex="D:\AndroidStudioProjects\Bars-Around-UW\barAroundUW\build\intermediates\pre-dexed\debug\classes-fe318b4b5c579ce53875ffb60f3a78047e2bcb49.jar" />
     </item>
 
 </items>

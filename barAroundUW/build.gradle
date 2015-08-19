@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 21
+    compileSdkVersion 22
     buildToolsVersion "22.0.1"
 
     defaultConfig {
         applicationId "app.bar.arounduw"
         minSdkVersion 14
-        targetSdkVersion 21
+        targetSdkVersion 22
     }
 
     buildTypes {
@@ -20,7 +20,9 @@ android {
 
 dependencies {
     compile project(':facebookSDK')
-    compile 'com.android.support:support-v4:21.0.3'
-    compile 'com.android.support:appcompat-v7:21.0.3'
-    compile 'com.google.android.gms:play-services:4.2.+'
+    compile 'com.android.support:support-v4:22.2.1'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.google.android.gms:play-services:7.5.0'
+    compile fileTree(dir: 'libs', include:['*.jar'])
+    androidTestCompile fileTree(dir: 'libs', include: 'robotium-solo-5.4.1.jar')
 }
